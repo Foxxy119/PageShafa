@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday!</title>
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(to bottom right, #ff9a9e, #fad0c4); /* A love and birthday-themed gradient */
+            font-family: 'Quicksand', sans-serif;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            background: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            border-radius: 15px;
+            padding: 20px;
+            max-width: 800px;
+            width: 90%;
+            text-align: left;
+        }
+
+        .picture-frame {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 20px;
+        }
+
+        .picture-frame img {
+            width: 100%;
+            max-width: 250px;
+            border: 10px solid white; /* Adds the white frame */
+            border-radius: 15px; /* Rounded corners for the frame */
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+        }
+
+        .text-content {
+            flex: 2;
+        }
+
+        .text-content h1 {
+            font-family: 'Dancing Script', cursive; /* Unique font for the title */
+            font-size: 2.5rem;
+            color: #ff6b6b; /* Birthday and love-themed color */
+            margin: 0;
+        }
+
+        .text-content p {
+            font-size: 1.2rem;
+            color: #333;
+            margin-top: 10px;
+        }
+
+        .text-content .button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 1rem;
+            color: white;
+            background-color: #ff6b6b;
+            text-decoration: none;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .text-content .button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        .audio-player {
+            display: none; /* Hide the audio player */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="picture-frame">
+            <img src="your-picture.jpg" alt="Birthday Picture">
+        </div>
+        <div class="text-content">
+            <h1>Happy Birthday!</h1>
+            <p>Wishing you a day filled with love, laughter, and unforgettable memories. You are truly special, and today is all about celebrating you!</p>
+            <a href="#celebrate" class="button">Celebrate Now</a>
+        </div>
+    </div>
+
+    <!-- Background Music -->
+    <audio class="audio-player" autoplay loop>
+        <source src="Happy Birthday Jazz Waltz.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+</body>
+</html>
